@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111">
+<link rel="manifest" href="manifest.webmanifest">
+<title>DARK AI</title>
+<style>
+body{font-family:Arial,sans-serif;background:#101010;color:#fff;margin:0;padding:24px}
+main{max-width:600px;margin:auto}h1{letter-spacing:2px}
+section{background:#202020;padding:16px;border-radius:14px;margin:14px 0}
+textarea,input{box-sizing:border-box;width:100%;padding:12px;border-radius:8px;border:0;margin:8px 0}
+button{padding:12px 18px;border:0;border-radius:8px;background:#e11d48;color:white;font-weight:bold}
+small{color:#bbb}
+</style>
+</head>
+<body>
+<main>
+<h1>DARK AI</h1>
+<p>Your simple personal AI workspace</p>
+<section>
+<h3>AI Chat</h3>
+<p><small>This starter page is a front-end demo. It does not include a free unlimited AI connection.</small></p>
+<textarea id="chat" rows="3" placeholder="Type your message..."></textarea>
+<button onclick="alert('AI connection abhi set up nahi hai. Is demo mein chat generate nahi hoti.')">Send</button>
+</section>
+<section>
+<h3>Video Prompt Maker</h3>
+<textarea id="idea" rows="3" placeholder="Apni video ka idea likho..."></textarea>
+<button onclick="document.getElementById('out').value='Create a cinematic video based on this idea: '+document.getElementById('idea').value">Make prompt</button>
+<textarea id="out" rows="4" placeholder="Your prompt will appear here..."></textarea>
+</section>
+<section>
+<h3>YouTube Helper</h3>
+<p><small>Upload ke liye title/description ideas manually prepare karo. Ye page YouTube par upload nahi karta.</small></p>
+</section>
+</main>
+</body>
+</html>
